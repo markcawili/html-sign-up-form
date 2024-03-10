@@ -14,7 +14,55 @@
         </div>
     </div>
 
-    <div class="content"></div>
+    <div class="content">
+        <form action="" method="get" class="sign-up-form">
+
+            <p>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+
+<!--            might be a dive here for form rows then just flex and wrap-->
+<!--            form-rows might even be in their own fieldset; create account outside of it-->
+            <fieldset class="input-forms">
+                <div class="form-row">
+                    <label for='first-name'>FIRST NAME</label>
+                    <input id="first-name" name="first-name" type="text"/>
+                </div>
+
+                <div class="form-row">
+                    <label for="last-name">LAST NAME</label>
+                    <input id="last-name" name="last-name" type="text"/>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" placeholder="joe@example.com"/>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input id="phone" name="phone" type="tel">
+                </div>
+
+                <div class="form-row">
+                    <label for="pwd">PASSWORD</label>
+                    <input id="pwd" name="pwd" type="password"/>
+                </div>
+
+                <div class="form-row">
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input id="confirm-pwd" name="confirm-pwd" type="password"/>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <button>Create Account</button>
+            </div>
+
+            <p>Already have an account? <a href="https://www.google.ca/?hl=fr">Log in</a></p>
+
+        </form>
+    </div>
 
 </body>
 </html>
