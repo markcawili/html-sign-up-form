@@ -9,7 +9,7 @@ html, body {
     font-family: odinFont;
     src: url(Norse-Bold.otf);
 }
-
+/*Set up dimensions*/
 .content {
     position: absolute;
     top: 0;
@@ -26,12 +26,13 @@ html, body {
     background-image:url(photo-1585202900225-6d3ac20a6962.avif);
 }
 
+/*Left sided content*/
 .logo-background {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    top: 150px;
+    top: 200px;
     height: 15%;
     width: 100%;
     background: rgb(0, 0, 0, 0.4);
@@ -51,4 +52,38 @@ h1 {
     position: relative;
     top: 10px;
     opacity: 0.9;
+}
+
+/*Right sided content*/
+
+/*Main container*/
+div #input-forms {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 4px 6px 4px -2px lightgrey;
+}
+
+/*Forms container*/
+div #forms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p,
+span,
+#forms,
+#submit.form-row {
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+form {
+    background-color: #f9fafb;
+    /*padding-top: 20%;*/
+    /*padding-bottom: 35%;*/
+}
+
+p {
+    font-size: 2.10vw;
 }
