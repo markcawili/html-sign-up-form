@@ -17,6 +17,7 @@ html, body {
     left: 30%;
     width: 70%;
     background-color: #f9fafb;
+    padding-top: 120px;
 }
 
 .background-picture {
@@ -58,11 +59,10 @@ h1 {
 /*Right sided content*/
 
 /*Main container*/
-div .input-forms {
+div.input-forms {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 30%;
+    height: 40%;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 4px 6px 4px -2px lightgrey;
@@ -72,6 +72,18 @@ div .input-forms {
 div #forms {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+div #forms>.form-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div #form-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 p,
@@ -80,9 +92,63 @@ span,
 #submit.form-row {
     padding-left: 5%;
     padding-right: 15%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 p,
 span {
-    font-size: 2.10vw;
+    font-size: 1.5vw;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
+    /*box-sizing: border-box;*/
+    width: 250px;
+    height: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=password]:focus {
+    border: 1px solid dodgerblue;
+    box-shadow: 2px 2px 2px #E5E7EB;
+}
+
+input,
+label {
+    display: block;
+}
+
+div #submit {
+    margin-top: 23.52px;
+    margin-bottom: 23.52px;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #FFFFFF;
+    background-color: #596D48;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+    height: 3em;
 }
